@@ -14,7 +14,7 @@ t_f = (t_c * 1.8) + 32
 
 # Connect to the DB
 try:
-    conn=pg.connect(dbname=sv.dbname, user=sv.dbuser, password=sv.dbpass)
+    conn=pg.connect(dbname=sv.dbname, user=sv.dbuser, password=sv.dbpass, host=sv.dbhost, port=sv.dbport)
     cur = conn.cursor()
 except:
     print "I am unable to connect to the database."

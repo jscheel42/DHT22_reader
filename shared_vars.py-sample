@@ -1,3 +1,5 @@
 dbname="heatbeat"
 dbuser=""
 dbpass=""
+dbhost=""
+dbport=""
