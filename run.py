@@ -20,8 +20,8 @@ except:
     print "I am unable to connect to the database."
 
 cur.execute("INSERT INTO public.sensors \
-    (humidity, temperature, inserted_at, updated_at) VALUES (%s, %s, %s, %s)", \
-    (h, t_f, "now()", "now()"))
+    (humidity, temperature, inserted_at) VALUES (%s, %s, %s)", \
+    (h, t_f, "now()"))
 
 # Commit transaction and close connections
 conn.commit()
